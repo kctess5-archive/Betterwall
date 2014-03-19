@@ -1,10 +1,23 @@
+Betterwall
+==========================
+
+A revamp and restructure of [Drywall](http://jedireza.github.io/drywall/). 
+
+While the original is quite useful, I personally found it's file structure to be very confusing and hard to follow. I restructured it so that all of the jade files are separate from the js files that render them. I have a few more updates that I want to integrate, but for now here it is. 
+
+*Warning* this does melt occasionally due to an uncaught error, I have yet to track this down.
+
+This is going to be a work in progress as I personalize this framework to suit my needs. It will generally be more striped down and more ambiguous than the original - I will probably remove bootstrap to allow choice in front-end frameworks. 
+
+This repo is in no way bashing to original, the work done on that was top notch - it is more of an homage and customization for personal preferences.
+
+The following is the original readme file, it's build instructions are still valid:
+
+
 Drywall
 =============
 
 A website and user system for Node.js. What you create with Drywall is more important than Drywall. [See a bird's eye view.](http://jedireza.github.io/drywall/)
-
-[![Dependency Status](https://david-dm.org/jedireza/drywall.png)](https://david-dm.org/jedireza/drywall)
-[![devDependency Status](https://david-dm.org/jedireza/drywall/dev-status.png)](https://david-dm.org/jedireza/drywall#info=devDependencies)
 
 Technology
 ------------
@@ -66,7 +79,7 @@ You need a few records in the database to start using the user system.
 Run these commands on mongo. __Obviously you should use your email address.__
 
 ```js
-use drywall;
+use betterwall;
 db.admingroups.insert({ _id: 'root', name: 'Root' });
 db.admins.insert({ name: {first: 'Root', last: 'Admin', full: 'Root Admin'}, groups: ['root'] });
 var rootAdmin = db.admins.findOne();
@@ -112,5 +125,3 @@ License
 ------------
 
 MIT
-
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/d41f60f22a2148e2e2dc6b705cd01481 "githalytics.com")](http://githalytics.com/jedireza/drywall)

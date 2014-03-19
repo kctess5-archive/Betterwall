@@ -2,10 +2,10 @@
 
 exports.port = process.env.PORT || 3000;
 exports.mongodb = {
-  uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'localhost/drywall'
+  uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'localhost/betterwall'
 };
 exports.companyName = 'Acme, Inc.';
-exports.projectName = 'Drywall';
+exports.projectName = 'Betterwall';
 exports.systemEmail = 'your@email.addy';
 exports.cryptoKey = 'k3yb0ardc4t';
 exports.loginAttempts = {
